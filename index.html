@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Название вашего сайта</title>
+  <style>
+    /* Общие стили */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      flex: 20%;
+    }
+    .logo img {
+      max-width: 100%;
+      height: auto;
+    }
+    .content {
+      flex: 80%;
+      text-align: center;
+    }
+    /* Медиа-запросы для адаптивности */
+    @media only screen and (max-width: 600px) {
+      .container {
+        flex-direction: column;
+      }
+      .logo, .content {
+        flex: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="путь_к_вашему_логотипу" alt="Логотип">
+    </div>
+    <div class="content">
+      <!-- Ваш контент здесь -->
+    </div>
+  </div>
+</body>
+</html>
+
